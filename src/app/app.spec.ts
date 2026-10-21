@@ -10,14 +10,14 @@ describe('App', () => {
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(App);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(fixture.componentInstance).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  it('should render title and environment', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, practica-entornos');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Práctica de despliegues');
+    expect(compiled.querySelector('.entorno')).toBeTruthy();
   });
 });

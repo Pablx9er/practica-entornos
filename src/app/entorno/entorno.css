@@ -1,0 +1,52 @@
+:host {
+  --color-entorno: #6b7280;
+  display: block;
+}
+
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  text-align: center;
+  background: #f9fafb;
+  color: #111827;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.bienvenida {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #4b5563;
+}
+
+.entorno {
+  margin-top: 1.5rem;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  border: 4px solid var(--color-entorno);
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.etiqueta {
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.nombre {
+  font-size: 1.75rem;
+  color: var(--color-entorno);
+}
